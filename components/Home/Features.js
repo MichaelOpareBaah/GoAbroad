@@ -52,9 +52,9 @@ const Features = () => {
                                  </div>
                                  <div className="features__content">
                                     <h3 className="features__title">
-                                       <Link href="/about">
+                                       
                                           <a>{feature.title}</a>
-                                       </Link>
+                                       
                                     </h3>
                                     <p>Go Abroad Consult</p>
 

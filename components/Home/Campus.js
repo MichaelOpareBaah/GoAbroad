@@ -43,13 +43,18 @@ const Campus = () => {
                      <div className="campus__wrapper">
                         <div className="section__title-wrapper mb-25">
                         <h2 className="section__title section__title-40">Services Offered</h2>
-                           <span className="section__title-pre">Below are services provided by Jose HERITAGE Consult :</span>
+                           <span className="section__title-pre">Below are services provided by Go Abroad Consult :</span>
                            
-                           <p>College Selection</p>
-                           <p>Scholarship Application</p>
-                           <p>Pre &post visa interview</p>
-                           <p>Off campus accommodation</p>
                            <p>Career consulting</p>
+                           <p>College selection & application</p>
+                           <p>Scholarship application</p>
+                           <p>Visa interview</p>
+                           <p>Intensive visa interview preparation</p>
+                           <p>Pre-arrival preparation</p>
+                           <p>Off campus accommodation</p>
+                           <p>Other services</p>
+
+                           
                            
                         </div>
                         

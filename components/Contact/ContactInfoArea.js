@@ -20,10 +20,8 @@ const ContactInfoArea = () => {
                         </div>
                         <div className="contact__content">
                            <h3 className="contact__title">Knowledge Base</h3>
-                           <p>My good sir plastered cuppa barney cobblers mush argy bargy ruddy.</p>
-                           <Link href="/contact">
-                              <a className="tp-btn tp-btn-border">Visit Documentation</a>
-                           </Link>
+                           
+                           
                         </div>
                      </div>
                   </div>
@@ -41,10 +39,8 @@ const ContactInfoArea = () => {
                         </div>
                         <div className="contact__content">
                            <h3 className="contact__title">Online Support</h3>
-                           <p>My good sir plastered cuppa barney cobblers mush argy bargy ruddy.</p>
-                           <Link href="/contact">
-                              <a className="tp-btn tp-btn-border">Send a Ticket</a>
-                           </Link>
+                           
+                          
                         </div>
                      </div>
                   </div>

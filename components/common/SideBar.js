@@ -51,12 +51,7 @@ const Sidebar = ({ show, handleClose }) => {
 
                   <div className="sidebar__content">
 
-                     <div className="offcanvas__search mb-25">
-                        <form onSubmit={handleSubmit}>
-                           <input onChange={(e) => setSearchValue(e.target.value)} type="text" placeholder="What are you searching for?" />
-                           <button type="submit" ><i className="far fa-search"></i></button>
-                        </form>
-                     </div>
+                     
 
                      <div className="mobile-menu">
                         <nav id="mobile-menu">
@@ -64,43 +59,22 @@ const Sidebar = ({ show, handleClose }) => {
                               {
                                  !user?.email &&
                                  <>
-                                    <Collapsible trigger={<Link href="/">Home</Link>} triggerTagName="div"
-                                       triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                                       <ul className="sidebar_sub_menu submenu text-white">
-                                          <li><Link href="/home"><a >Home Style 1</a></Link></li>
-                                          <li><Link href="/home-two"><a >Home Style 2</a></Link></li>
-                                          <li><Link href="/home-three"><a >Home Style 3</a></Link></li>
-                                       </ul>
-                                    </Collapsible>
+                                    
+                                    <div className='single_link iconAdd '>
+                                       <li><Link href="/"><a>Home</a></Link></li>
+                                    </div>
 
                                     <div className='single_link iconAdd '>
                                        <li><Link href="/about"><a>About</a></Link></li>
                                     </div>
 
-                                    <Collapsible trigger={<Link href="/courses">Courses</Link>} triggerTagName="div"
-                                       triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                                       <ul className="sidebar_sub_menu submenu text-white">
-                                          <li><Link href="/courses"><a>Course Style 1</a></Link></li>
-                                          <li><Link href="/courses-style-two"><a>Course Style 2</a></Link></li>
-                                          <li><Link href="/course-sidebar"><a>Course Sidebar</a></Link></li>
-                                          <li><Link href="/course-details"><a>Course Details</a></Link></li>
-                                       </ul>
-                                    </Collapsible>
+                                    <div className='single_link iconAdd '>
+                                       <li><Link href="/services"><a>Services</a></Link></li>
+                                    </div>
 
-                                    <Collapsible trigger={<Link href="/about">Pages</Link>} triggerTagName="div"
-                                       triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
-                                       <ul className="sidebar_sub_menu submenu text-white">
-                                          <li><Link href="/events"><a >Our Events</a></Link></li>
-                                          <li><Link href="/event-details"><a >Event Details</a></Link></li>
-                                          <li><Link href="/team"><a >Team</a></Link></li>
-                                          <li><Link href="/team-details"><a >Team Details</a></Link></li>
-                                          <li><Link href="/404-page"><a >404 Error</a></Link></li>
-                                          <li><Link href="/sign-in"><a >Sign In</a></Link></li>
-                                          <li><Link href="/sign-up"><a >Sign Up</a></Link></li>
-                                          <li><Link href="/cart"><a >Cart</a></Link></li>
-                                          <li><Link href="/checkout"><a >Checkout</a></Link></li>
-                                       </ul>
-                                    </Collapsible>
+                                    
+
+                                    
 
                                     <Collapsible trigger={<Link href="/blog">Blog</Link>} triggerTagName="div"
                                        triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>

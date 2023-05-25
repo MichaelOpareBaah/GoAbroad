@@ -26,9 +26,9 @@ const Footer = ({ white_bg = '' }) => {
                                        <h4>Follow Us</h4>
 
                                        <ul>
-                                          <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
-                                          <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
-                                          <li><a href="#"><i className="fa-brands fa-linkedin-in"></i></a></li>
+                                          <li><a target="_blank" href="https://web.facebook.com/profile.php?id=100092540997206"><i className="fa-brands fa-facebook-f"></i></a></li>
+                                          <li><a target="_blank" href="https://www.instagram.com/goabroadconsult/"><i className="fa-brands fa-instagram"></i></a></li>
+                                          <li><a  target="_blank" href="https://www.tiktok.com/@goabroadconsult?lang=en"><i className="fa-brands fa-tiktok"></i></a></li>
                                        </ul>
                                     </div>
                                  </div>
@@ -41,16 +41,16 @@ const Footer = ({ white_bg = '' }) => {
                               <div className="footer__widget-content">
                                  <ul>
                                     <li>
-                                       <a href="#">About us</a>
+                                       <a href="/about">About us</a>
                                     </li>
                                     
                                     
                                     
                                     <li>
-                                       <a href="#">Events</a>
+                                       <a href="/services">Services</a>
                                     </li>
                                     <li>
-                                       <a href="#">Contact us</a>
+                                       <a href="/contact">Contact us</a>
                                     </li>
                                  </ul>
                               </div>
@@ -62,7 +62,7 @@ const Footer = ({ white_bg = '' }) => {
                               <div className="footer__widget-content">
                                  <ul>
                                     <li>
-                                       <a href="#">News & Blogs</a>
+                                       <a href="/blog">News & Blogs</a>
                                     </li>
                                     
                                     
@@ -70,7 +70,7 @@ const Footer = ({ white_bg = '' }) => {
                                        <a href="#">Terms of service</a>
                                     </li>
                                     <li>
-                                       <a href="#">Schedule appointment</a>
+                                       <a target="_blank"  href="https://calendly.com/goabroadconsult2023/consult">Schedule appointment</a>
                                     </li>
                                    
                                    
@@ -103,7 +103,7 @@ const Footer = ({ white_bg = '' }) => {
                         <div className="row">
                            <div className="col-xxl-12">
                               <div className="footer__copyright text-center">
-                                 <p>© 2022 Educal. All Rights Reserved</p>
+                                 <p>© 2023 Go Abroad Consult. All Rights Reserved</p>
                               </div>
                            </div>
                         </div>

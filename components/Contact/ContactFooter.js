@@ -21,14 +21,14 @@ const ContactFooter = () => {
                               </div>
                               <div className="footer__widget-content">
                                  <div className="footer__widget-info">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Nunc maximus, nulla utlaoki comm odo sagittis.</p>
+                                    <p>Go Abroad Consult is an educational study abroad consult that specializes in helping students pursue their academic goals and career in the United States.</p>
                                     <div className="footer__social">
                                        <h4>Follow Us</h4>
 
                                        <ul>
-                                          <li><a href="#" className="fb" ><i className="fa-brands fa-facebook-f"></i></a></li>
-                                          <li><a href="#" className="tw" ><i className="fa-brands fa-twitter"></i></a></li>
-                                          <li><a href="#" className="pin" ><i className="fa-brands fa-pinterest-p"></i></a></li>
+                                          <li><a target="_blank" href="https://web.facebook.com/profile.php?id=100092540997206" className="fb" ><i className="fa-brands fa-facebook-f"></i></a></li>
+                                          <li><a target="_blank" href="https://www.instagram.com/goabroadconsult/" className="tw" ><i className="fa-brands fa-twitter"></i></a></li>
+                                          <li><a target="_blank" href="https://www.tiktok.com/@goabroadconsult?lang=en" className="pin" ><i className="fa-brands fa-pinterest-p"></i></a></li>
                                        </ul>
                                     </div>
                                  </div>
@@ -41,25 +41,13 @@ const ContactFooter = () => {
                               <div className="footer__widget-content">
                                  <ul>
                                     <li>
-                                       <a href="#">About us</a>
+                                       <a href="/about">About us</a>
                                     </li>
                                     <li>
-                                       <a href="#">Success story</a>
+                                       <a href="/services">Services</a>
                                     </li>
                                     <li>
-                                       <a href="#">Courses</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">About us</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">Instructor</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">Events</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">Contact us</a>
+                                       <a href="/contact">Contact us</a>
                                     </li>
                                  </ul>
                               </div>
@@ -71,26 +59,18 @@ const ContactFooter = () => {
                               <div className="footer__widget-content">
                                  <ul>
                                     <li>
-                                       <a href="#">News & Blogs</a>
+                                       <a href="/blog">News & Blogs</a>
                                     </li>
-                                    <li>
-                                       <a href="#">Library</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">Gallery</a>
-                                    </li>
+                                    
+                                    
                                     <li>
                                        <a href="#">Terms of service</a>
                                     </li>
+                                    
                                     <li>
-                                       <a href="#">Membership</a>
+                                       <a target="_blank"  href="https://calendly.com/goabroadconsult2023/consult">Schedule Appointment</a>
                                     </li>
-                                    <li>
-                                       <a href="#">Career</a>
-                                    </li>
-                                    <li>
-                                       <a href="#">Partners</a>
-                                    </li>
+                                    
                                  </ul>
                               </div>
                            </div>
@@ -119,7 +99,7 @@ const ContactFooter = () => {
                         <div className="row">
                            <div className="col-xxl-12">
                               <div className="footer__copyright text-center">
-                                 <p>© 2022 Educal. All Rights Reserved</p>
+                                 <p>© 2023 Go Abroad Consult. All Rights Reserved</p>
                               </div>
                            </div>
                         </div>

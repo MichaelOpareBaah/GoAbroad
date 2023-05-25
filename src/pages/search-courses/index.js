@@ -26,12 +26,12 @@ const SearchCourses = () => {
       <SEO pageTitle="Search Courses" />
 
       <Header />
-      <BreadCrumb title="Search Course" subtitle="Search Course" />
+      <BreadCrumb title="Track Application" subtitle="Track Application" />
 
       <section className="my__course pt-120 pb-90">
         <div className="container">
           <div className="row">
-            {searchItems && <h2>Not Found</h2>}
+            {searchItems && <h2>Application ID Not Updated</h2>}
             {searchesCourse.map((course) => {
               const { _id, img_bg, title, category, price } = course;
               return (

@@ -46,9 +46,10 @@ const HeroArea = () => {
                                        <h2 className="slider__title">{slider.title}</h2>
                                        <p>“Education's purpose is to replace an empty mind with an open one.” - Malcolm Forbes</p>
                                        <div className="slider__btn">
-                                          <Link href="/courses">
-                                             <a className="tp-btn">Track Application</a>
-                                          </Link>
+                                          
+                                          <a target="_blank" href="https://calendly.com/goabroadconsult2023/consult" className="tp-btn">Schedule Appointment</a>
+                                             
+                                          
                                        </div>
                                     </div>
                                  </div>

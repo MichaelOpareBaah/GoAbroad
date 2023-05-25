@@ -5,39 +5,40 @@ SwiperCore.use([ Pagination]);
 const Testimonials = () => {
    // testimonialData
    const testimonialData = [
+     
       {
          id: 1,
-         img: 'assets/img/testimonial/testimonial-1.jpg',
-         review: 'Great Service!',
-         name: 'Eunice Yeboah',
+         img: 'assets/img/testimonial/testimonial-2.jpeg',
+         review: 'Go Abroad Consult is an amazing program that helped me with my plans on studying abroad. They made the process really stress-free and with absolute simplicity. There was no lack of proper communication as I was able to get subsequent information on every stage of the process. If you’re looking for any program to help you with this process, you’re at the right place.',
+         name: 'David Ebe',
          title: 'Student'
       },
       {
          id: 2,
-         img: 'assets/img/testimonial/testimonial-2.jpg',
-         review: 'Great Service!',
-         name: 'Gladys Yeboah',
+         img: 'assets/img/testimonial/testimonial-1.jpeg',
+         review: 'Go Abroad Consult worked with me through my process of study abroad. They made it easy and they were super good at communicating. They helped through the visa process, traveling process, and also helped me settle in my school.',
+         name: 'Daniella Obot',
          title: 'Student'
       },
       {
          id: 3,
          img: 'assets/img/testimonial/testimonial-3.jpg',
-         review: 'Great Service!',
-         name: 'Eunice Yeboah',
+         review: 'I was looking for a trusted agency to handle my admission, and visa process. I found “Go abroad consult” which made it easier than I thought the process would be. They took care of every little detail, and made sure to inform me about everything I needed to know. If you are looking for a well trusted, and professional agency, Go abroad consult should be your go to.',
+         name: 'Diane Sandrine Kabore',
          title: 'Student'
       },
       {
          id: 4,
-         img: 'assets/img/testimonial/testimonial-4.jpg',
-         review: 'Great Service!',
-         name: 'Eunice Yeboah',
+         img: 'assets/img/testimonial/testimonial-1.jpeg',
+         review: 'Go Abroad Consult is an amazing program that helped me with my plans on studying abroad. They made the process really stress-free and with absolute simplicity. There was no lack of proper communication as I was able to get subsequent information on every stage of the process. If you’re looking for any program to help you with this process, you’re at the right place.',
+         name: 'Daniella Obot',
          title: 'Student'
       },
       {
          id: 5,
-         img: 'assets/img/testimonial/testimonial-2.jpg',
-         review: 'Code Quality!',
-         name: 'Eunice Yeboah',
+         img: 'assets/img/testimonial/testimonial-2.jpeg',
+         review: 'Go Abroad Consult is an amazing program that helped me with my plans on studying abroad. They made the process really stress-free and with absolute simplicity. There was no lack of proper communication as I was able to get subsequent information on every stage of the process. If you’re looking for any program to help you with this process, you’re at the right place.',
+         name: 'David Ebe',
          title: 'Student'
       },
    ]
@@ -84,8 +85,8 @@ const Testimonials = () => {
                                           <img src={testimonial.img} alt="" />
                                        </div>
                                        <div className="testimonial__text">
-                                          <h4>{testimonial.review}</h4>
-                                          <p>Lorem ipsum dolor sit amet, consectet adipiscing elit. Phasellus feugiat lacus vitae neque ornare.</p>
+                                          <p>{testimonial.review}</p>
+                                          
                                        </div>
                                        <div className="testimonial__avater-info mb-5">
                                           <h3>{testimonial.name}</h3>
