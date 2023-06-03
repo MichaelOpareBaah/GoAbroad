@@ -23,7 +23,7 @@ const Cta = () => {
                               <h3 className="cta__title">Schedule an appointment</h3>
                               <p>Schedule appointment with us to discuss your plans.</p>
                               <Link href="https://calendly.com/goabroadconsult2023/consult">
-                                 <a target="_blank" href="https://calendly.com/goabroadconsult2023/consult" className="tp-btn tp-btn-3">Schedule Now</a>
+                                 <a target="_blank" rel='noreferrer' href="https://calendly.com/goabroadconsult2023/consult" className="tp-btn tp-btn-3">Schedule Now</a>
                               </Link>
                            </div>
                         </div>

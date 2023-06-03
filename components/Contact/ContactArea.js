@@ -1,5 +1,38 @@
+import { useState } from "react";
+import axios from 'axios';
 
 const ContactArea = () => {
+   const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+    const [loader, setLoader] = useState(false);
+    const [send, setSend] = useState('');
+
+    const handleChange = event => {
+      setFormData({ ...formData, [event.target.name]: event.target.value });
+    };
+
+    const handleSubmit = event => {
+      event.preventDefault();
+      setLoader(true);
+  
+   axios.post('https://admin.goabroadconsult.com/api/contact', formData)
+        .then(response => {
+         setLoader(false)
+          console.log(response.data);
+          setSend(response.data);
+          //** */ Clear the form input fields
+        setFormData({ name: '', email: '', subject: '',message: '' });
+        })
+        .catch(error => {
+          console.error(error);
+          // Handle the error
+        });
+    };
+  
    return (
       < >
          <section className="contact__area pt-115 pb-120">
@@ -14,28 +47,29 @@ const ContactArea = () => {
                               </span>
                            </h2>
                            <p>Have a question or just want to say hi? Wed love to hear from you.</p>
+                           <p><strong className="text-success">{send}</strong></p>
                         </div>
                         <div className="contact__form">
-                           <form action="#">
+                           <form onSubmit={handleSubmit}>
                               <div className="row">
                                  <div className="col-xxl-6 col-xl-6 col-md-6">
                                     <div className="contact__form-input">
-                                       <input required type="text" placeholder="Your Name" />
+                                       <input required type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" />
                                     </div>
                                  </div>
                                  <div className="col-xxl-6 col-xl-6 col-md-6">
                                     <div className="contact__form-input">
-                                       <input required type="email" placeholder="Your Email" />
+                                       <input required type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" />
                                     </div>
                                  </div>
                                  <div className="col-xxl-12">
                                     <div className="contact__form-input">
-                                       <input required type="text" placeholder="Subject" />
+                                       <input required type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject" />
                                     </div>
                                  </div>
                                  <div className="col-xxl-12">
                                     <div className="contact__form-input">
-                                       <textarea required placeholder="Enter Your Message"></textarea>
+                                       <textarea required name="message" value={formData.message} onChange={handleChange} placeholder="Enter Your Message"></textarea>
                                     </div>
                                  </div>
                                  <div className="col-xxl-12">
@@ -46,7 +80,7 @@ const ContactArea = () => {
                                  </div>
                                  <div className="col-xxl-12">
                                     <div className="contact__btn">
-                                       <button type='submit' className="tp-btn">Send your message</button>
+                                       <button type='submit' className="tp-btn" disabled={loader === false ? false : true} > {loader === false ? "Send your message" : "Submitting...."}  </button>
                                     </div>
                                  </div>
                               </div>

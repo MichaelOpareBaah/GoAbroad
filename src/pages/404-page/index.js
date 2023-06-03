@@ -3,6 +3,7 @@ import BreadCrumb from '../../../components/common/BreadCrumb';
 import Footer from '../../../components/common/Footer';
 import Header from '../../../components/Home/Header';
 import SEO from '../../../components/seo';
+import Image from 'next/image';
 
 const ErrorPage = () => {
    return (

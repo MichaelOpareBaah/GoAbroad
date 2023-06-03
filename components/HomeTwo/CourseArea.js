@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { useGetCoursesQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 const CourseArea = () => {
   const {data:courses,isLoading,error,isError} = useGetCoursesQuery();

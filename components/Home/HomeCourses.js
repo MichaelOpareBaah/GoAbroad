@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useGetCoursesQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 const HomeCourses = () => {
    const {data:courses,isLoading,error,isError} = useGetCoursesQuery();

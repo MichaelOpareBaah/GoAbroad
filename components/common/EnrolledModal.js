@@ -3,6 +3,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import CheckoutForm from './CheckoutForm';
 import { Elements } from '@stripe/react-stripe-js';
 import useAuth from '../../hooks/useAuth';
+import Image from 'next/image';
 
 // stripePromise
 const stripePromise = loadStripe('pk_test_51KYNhaLbyBVvY2i8wtD0oB9BfL7xqe7DpVtTQb6PzoOWwMUCqQoAOEAPALZuaIbLONev4n0uOVAYYCUIfRiRV3qw00x3Ko33kS');

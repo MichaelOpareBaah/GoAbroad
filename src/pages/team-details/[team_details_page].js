@@ -8,6 +8,7 @@ import { singleTeam } from '../../../redux/features/teamSlice';
 import Link from 'next/link';
 import SEO from '../../../components/seo';
 import { useGetCoursesQuery, useGetTeamQuery } from '../../../redux/api/apiSlice';
+import Image from 'next/image';
 
 const DetialsPage = () => {
   const { data: coursesItems } = useGetCoursesQuery();

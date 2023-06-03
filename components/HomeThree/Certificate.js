@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Modal } from 'react-responsive-modal';
 import ReactPlayer from "react-player";
+import Image from 'next/image';
 
 const Certificate = () => {
    // opne modal state

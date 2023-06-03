@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const DynamicPageEventRightSide = ({ eventDetails }) => {
    // distructure eventDetails
-   const { price, time, end_time } = eventDetails || {};
+   console.log("Coming in : ",eventDetails)
+   const { price, time, end_time, location } = eventDetails || {};
    return (
       <>
          <div className="col-xxl-4 col-xl-4 col-lg-4">
@@ -18,7 +20,7 @@ const DynamicPageEventRightSide = ({ eventDetails }) => {
                            <h5>${price} </h5>
                         </div>
                         <div className="event__info-discount">
-                           <span>On Sale</span>
+                           <span>Price</span>
                         </div>
                      </div>
                      <div className="event__info-content mb-35">
@@ -56,7 +58,7 @@ const DynamicPageEventRightSide = ({ eventDetails }) => {
                                  </svg>
                               </div>
                               <div className="event__info-item">
-                                 <h5><span>Venue: </span> New York, TX 82760, US</h5>
+                                 <h5><span>Venue: </span> {location}</h5>
                               </div>
                            </li>
                         </ul>

@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination } from 'swiper';
+import Image from 'next/image';
 SwiperCore.use([ Pagination]);
 
 const Testimonials = () => {

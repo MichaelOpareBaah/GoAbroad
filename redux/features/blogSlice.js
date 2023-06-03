@@ -4,18 +4,34 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 export const blogData = createAsyncThunk(
   'blogs/fetchBlogs',
   async () => {
-    const response = await fetch('https://eduker-server.onrender.com/blog')
-    const data = response.json();
-    return data;
+    // const response = await fetch('http://eduker-server.onrender.com/blog');
+    // const data = response.json();
+
+    const mine = await fetch(
+      // 'http://127.0.0.1:8000/api/get-blogs'
+      'https://admin.goabroadconsult.com'
+      )
+    const miData = mine.json();
+
+    console.log("Their Data :")
+    console.log("Mine : ", miData)
+    
+    return miData;
   }
 )
 // get single blog
 export const singleBlog = createAsyncThunk(
   'event/fetchEvent',
-  async (id = '62208badea7975d304d76830') => {
-    const response = await fetch(`https://eduker-server.onrender.com/blog/${id}`)
-    const event = response.json();
-    return event;
+  async (id) => {
+    console.log("okay : ",id)
+    // const response = await fetch(`https://eduker-server.onrender.com/blog/${id}`)
+    // const event = response.json();
+
+    const miSingle = await fetch(`127.0.0.1:8000/api/single-blog/${id}`)
+    const singleData = miSingle.json();
+
+    
+    return singleData;
   }
 )
 // blogSlice
@@ -50,6 +66,25 @@ export const blogSlice = createSlice({
   },
 
 })
+
+
+export const fetchData = async (id) => {
+  var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+
+  const response = await 
+  fetch(
+    `https://admin.goabroadconsult.com`
+    // `http://127.0.0.1:8000/api/single-blog/${id}`
+  , requestOptions)
+  .then(response => response.text())
+  .then(result => result)
+  .catch(error => console.log('error', error));
+
+  return response;
+}
 
 // export const {  } = blogSlice.actions
 

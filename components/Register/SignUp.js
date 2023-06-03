@@ -4,6 +4,7 @@ import useAuth from '../../hooks/useAuth';
 import { useForm } from "react-hook-form";
 import Swal from 'sweetalert2';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const SignUp = () => {
    // useAuth

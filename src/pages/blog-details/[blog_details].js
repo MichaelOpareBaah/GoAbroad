@@ -8,7 +8,8 @@ import DynamicPageHeader from "../../../components/common/DynamicPageHeader";
 import Footer from "../../../components/common/Footer";
 import SEO from "../../../components/seo";
 import { useGetBlogQuery } from "../../../redux/api/apiSlice";
-import { singleBlog } from "../../../redux/features/blogSlice";
+import { singleBlog,fetchData } from "../../../redux/features/blogSlice";
+import Image from "next/image";
 
 const BlogDetails = () => {
    // router
@@ -16,12 +17,21 @@ const BlogDetails = () => {
    // id
    const id = router.query.blog_details;
    const [request, setRequest] = useState(false);
-   const {data:blog,isError,isLoading,error } = useGetBlogQuery(id, {
+
+   // const {data:blog,isError,isLoading,error } = useGetBlogQuery(id, {
+   //    skip: !request
+   // })
+
+   const blogData = fetchData(id);
+
+   const {data:blog,isError,isLoading,error} = useGetBlogQuery(id, {
       skip: !request
    })
+
    // blogs
    const blogs = useSelector(state => state.blogs.allBlogs);
    // dispatch
+
    const dispatch = useDispatch();
    // get single blog
    useEffect(() => {
@@ -29,6 +39,7 @@ const BlogDetails = () => {
 
       }
       else {
+         
          setRequest(true);
       }
    }, [dispatch, id,request]);
@@ -53,14 +64,16 @@ const BlogDetails = () => {
             <div className="postbox__content">
                <div className="postbox__meta">
                   <span><i className="far fa-calendar-check"></i> {blog?.date} </span>
-                  <span><a href="#"><i className="far fa-user"></i> Shahnewaz</a></span>
-                  <span><a href="#"><i className="fal fa-comments"></i> 02 Comments</a></span>
+                  <span><a href="#"><i className="far fa-user"></i> {blog?.blog_author}</a></span>
+                  {/* <span><a href="#"><i className="fal fa-comments"></i> 02 Comments</a></span> */}
                </div>
-               <h3 className="postbox__title">A Podpourri of Learning Options: Pods, Hubs, and Microschools</h3>
-               <div className="postbox__text mb-40">
-                  <p>Me old mucker argy-bargy  Im telling pear shaped Jeffrey super brilliant, I excuse my French blatant gormless up the duff, cup of char up the kyver tosser cras happy days. The full monty he nicked it he legged it bum bag burke plastered arse over tit its your round owt to do with me pardon you, on your bike mate hanky panky mush cuppa only a quid crikey Jeffrey skive off, faff about so I said what a load of rubbish blag David knees up cockup cras. Argy-bargy give us a bell wellies gosh skive off old bodge cheesed off A bit of hows your father off his nut bamboozled, bugger say Im telling morish bleeding boot up the kyver nice one brilliant, ruddy jolly good fanny around chinwag amongst brown bread arse brolly. Horse play its all gone to pot codswallop easy peasy mush knees up down the pub jolly good nice one tosser its your round lurgy, I vagabond barmy off his nut only a quid so I said is gosh Charles blow off, pardon me chip shop Richard spiffing skive off bleeding get stuffed mate porkies amongst the full monty.</p>
+               <h3 className="postbox__title">{blog?.title}</h3>
+               <div className="postbox__text mb-40" >
+               <div dangerouslySetInnerHTML={{__html: blog?.body}} />
+               {/* { blog?.body} */}
+                  {/* <p>Me old mucker argy-bargy  Im telling pear shaped Jeffrey super brilliant, I excuse my French blatant gormless up the duff, cup of char up the kyver tosser cras happy days. The full monty he nicked it he legged it bum bag burke plastered arse over tit its your round owt to do with me pardon you, on your bike mate hanky panky mush cuppa only a quid crikey Jeffrey skive off, faff about so I said what a load of rubbish blag David knees up cockup cras. Argy-bargy give us a bell wellies gosh skive off old bodge cheesed off A bit of hows your father off his nut bamboozled, bugger say Im telling morish bleeding boot up the kyver nice one brilliant, ruddy jolly good fanny around chinwag amongst brown bread arse brolly. Horse play its all gone to pot codswallop easy peasy mush knees up down the pub jolly good nice one tosser its your round lurgy, I vagabond barmy off his nut only a quid so I said is gosh Charles blow off, pardon me chip shop Richard spiffing skive off bleeding get stuffed mate porkies amongst the full monty.</p> */}
                </div>
-               <div className="postbox__quote grey-bg-2 mb-45 p-relative fix">
+               {/* <div className="postbox__quote grey-bg-2 mb-45 p-relative fix">
                   <img className="quote" src="/assets/img/blog/quote-1.png" alt="" />
                   <blockquote>
                      <p>After I started learning design with Quillow, I realized that I had Improved to very advanced levels.</p>
@@ -90,10 +103,10 @@ const BlogDetails = () => {
                      <a href="#">Education</a>
                      <a href="#">App</a>
                   </div>
-               </div>
+               </div> */}
             </div>
          </div>
-         <div className="latest-comments mb-65">
+         {/* <div className="latest-comments mb-65">
             <h3>3 Comments</h3>
             <ul>
                <li>
@@ -156,9 +169,9 @@ const BlogDetails = () => {
                   </ul>
                </li>
             </ul>
-         </div>
+         </div> */}
          {/* FormArea */}
-         <FormArea />
+         {/* <FormArea /> */}
       </div>
    </div>
    }

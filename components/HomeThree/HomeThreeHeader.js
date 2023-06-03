@@ -6,6 +6,7 @@ import useAuth from '../../hooks/useAuth';
 import useSticky from '../../hooks/useSticky';
 import Sidebar from '../common/SideBar';
 import StickyHeader from './StickyHeader';
+import Image from 'next/image';
 
 const HomeThreeHeader = () => {
     // handle sidebar show

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const ContactFooter = () => {
@@ -26,9 +27,9 @@ const ContactFooter = () => {
                                        <h4>Follow Us</h4>
 
                                        <ul>
-                                          <li><a target="_blank" href="https://web.facebook.com/profile.php?id=100092540997206" className="fb" ><i className="fa-brands fa-facebook-f"></i></a></li>
-                                          <li><a target="_blank" href="https://www.instagram.com/goabroadconsult/" className="tw" ><i className="fa-brands fa-twitter"></i></a></li>
-                                          <li><a target="_blank" href="https://www.tiktok.com/@goabroadconsult?lang=en" className="pin" ><i className="fa-brands fa-pinterest-p"></i></a></li>
+                                          <li><a target="_blank" rel='noreferrer' href="https://web.facebook.com/profile.php?id=100092540997206" className="fb" ><i className="fa-brands fa-facebook-f"></i></a></li>
+                                          <li><a target="_blank" rel='noreferrer' href="https://www.instagram.com/goabroadconsult/" className="tw" ><i className="fa-brands fa-twitter"></i></a></li>
+                                          <li><a target="_blank" rel='noreferrer' href="https://www.tiktok.com/@goabroadconsult?lang=en" className="pin" ><i className="fa-brands fa-pinterest-p"></i></a></li>
                                        </ul>
                                     </div>
                                  </div>
@@ -41,13 +42,13 @@ const ContactFooter = () => {
                               <div className="footer__widget-content">
                                  <ul>
                                     <li>
-                                       <a href="/about">About us</a>
+                                       <Link href="/about">About us</Link>
                                     </li>
                                     <li>
-                                       <a href="/services">Services</a>
+                                       <Link href="/services">Services</Link>
                                     </li>
                                     <li>
-                                       <a href="/contact">Contact us</a>
+                                       <Link href="/contact">Contact us</Link>
                                     </li>
                                  </ul>
                               </div>
@@ -59,7 +60,7 @@ const ContactFooter = () => {
                               <div className="footer__widget-content">
                                  <ul>
                                     <li>
-                                       <a href="/blog">News & Blogs</a>
+                                       <Link href="/blog">News & Blogs</Link>
                                     </li>
                                     
                                     
@@ -68,7 +69,7 @@ const ContactFooter = () => {
                                     </li>
                                     
                                     <li>
-                                       <a target="_blank"  href="https://calendly.com/goabroadconsult2023/consult">Schedule Appointment</a>
+                                       <a target="_blank" rel='noreferrer' href="https://calendly.com/goabroadconsult2023/consult">Schedule Appointment</a>
                                     </li>
                                     
                                  </ul>

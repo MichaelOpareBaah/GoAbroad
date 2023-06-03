@@ -3,6 +3,7 @@ import { useDispatch} from 'react-redux';
 import Pagination from '../common/Pagination';
 import Link from 'next/link';
 import { useGetCategoryQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 
 const CourseArea = ({ courseData }) => {

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import DynamicPageHeader from '../../components/common/DynamicPageHeader';
 import Footer from '../../components/common/Footer';
+import Image from 'next/image';
 
 const ErroPage = () => {
    return (

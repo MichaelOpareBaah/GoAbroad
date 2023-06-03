@@ -8,6 +8,8 @@ const Events = () => {
    // decide to render
    let content = null;
    // loader
+
+   // console.log("events : ",events)
    if (isLoading && !isError) {
       content = <div className="container">
       <h2 className="text-center pt-10 alert alert-info mt-50">Loading...</h2>

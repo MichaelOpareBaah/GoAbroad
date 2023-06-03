@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const AboutArea = ({ about_pt = '' }) => {
@@ -32,7 +33,7 @@ const AboutArea = ({ about_pt = '' }) => {
                            <span className="section__title-pre">BEST EDUCATIONAL CONSULT</span>
                            <h2 className="section__title">Welcome to Go Abroad Consult</h2>
                         </div>
-                        <p>Go Abroad Consult is an educational study abroad consult that specializes in helping students pursue their academic goals and career in the United States. We provide first hand US based curriculum guidance, school selection and application, intensive visa interview preparation, pre and post arrival preparation, and all the necessary Steps and guidance you'll need to settle in the United States as an international student. We are bound by a team of committed specialized education analysts, professors, admission recruiters, visa consulting agents and financial deputies who make your sure your transition to the United states is hassle free and as smooth as it can be!.  </p>
+                        <p>Go Abroad Consult is an educational study abroad consult that specializes in helping students pursue their academic goals and career in the United States. We provide first hand US based curriculum guidance, school selection and application, intensive visa interview preparation, pre and post arrival preparation, and all the necessary Steps and guidance you`ll need to settle in the United States as an international student. We are bound by a team of committed specialized education analysts, professors, admission recruiters, visa consulting agents and financial deputies who make your sure your transition to the United states is hassle free and as smooth as it can be!.  </p>
 
                         
 

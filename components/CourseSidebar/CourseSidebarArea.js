@@ -6,6 +6,7 @@ import NewCourses from './NewCourses';
 import { useRouter } from 'next/router';
 import { searchText } from '../../redux/features/coursesSlice';
 import { useGetCategoryQuery, useGetCoursesQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 const CourseSidebarArea = () => {
   const [category, setCategory] = useState('Category');

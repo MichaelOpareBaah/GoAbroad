@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, clearCart, decreaseCartQuantity, getTotal, removeFromCart } from '../../redux/features/cartSlice';
 import Swal from 'sweetalert2';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const CartArea = () => {
    // check cart items

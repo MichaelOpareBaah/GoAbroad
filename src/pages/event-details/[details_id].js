@@ -8,6 +8,7 @@ import HomeTwoFooter from '../../../components/HomeTwo/HomeTwoFooter';
 import SEO from '../../../components/seo';
 import { useGetEventQuery } from '../../../redux/api/apiSlice';
 import { singleEvent } from '../../../redux/features/eventSlice';
+import Image from 'next/image';
 
 
 const DetailsEvent = () => {
@@ -16,7 +17,7 @@ const DetailsEvent = () => {
    // id
    const id = router.query.details_id;
    const { data: eventDetails, isLoading, isError } = useGetEventQuery(id)
-   const { event_img } = eventDetails || {};
+   const { event_img,description } = eventDetails || {};
 
    if (isLoading && !isError) {
       return <div className="container">
@@ -40,9 +41,10 @@ const DetailsEvent = () => {
                         </div>
                         <div className="event__details mb-35">
                            <h3>Description</h3>
-                           <p>He legged it up the kyver have it mush super me old mucker cheeky naff that are you taking the piss, blow off down the pub bite your arm off the wireless boot cor blimey guvnor happy days bender what a load of rubbish, say pardon me horse play spiffing Why car boot gosh bubble and squeak. Cheers Richard bugger show off show off pick your nose and blow off get stuffed mate chancer in my flat loo, bevvy amongst hunky-dory bender bubble and squeak me old mucker vagabond, barmy spend a penny chimney pot young delinquent bum bag the bees knees chap, gosh nice one knees up the wireless Charles such a fibber. Mush barmy bleeding Jeffrey pardon me barney grub loo cup of tea bubble and squeak bugger all mate say, I bloke matie boy tickety-boo give us a bell up the duff bugger lurgy wind up I dont want no agro.</p>
+                           <div dangerouslySetInnerHTML={{__html: description?.description}} />
+                           {/* <p>He legged it up the kyver have it mush super me old mucker cheeky naff that are you taking the piss, blow off down the pub bite your arm off the wireless boot cor blimey guvnor happy days bender what a load of rubbish, say pardon me horse play spiffing Why car boot gosh bubble and squeak. Cheers Richard bugger show off show off pick your nose and blow off get stuffed mate chancer in my flat loo, bevvy amongst hunky-dory bender bubble and squeak me old mucker vagabond, barmy spend a penny chimney pot young delinquent bum bag the bees knees chap, gosh nice one knees up the wireless Charles such a fibber. Mush barmy bleeding Jeffrey pardon me barney grub loo cup of tea bubble and squeak bugger all mate say, I bloke matie boy tickety-boo give us a bell up the duff bugger lurgy wind up I dont want no agro.</p> */}
                         </div>
-                        <div className="event__allow mb-40">
+                        {/* <div className="event__allow mb-40">
                            <h3>This event will allow participants to:</h3>
                            <ul>
                               <li><i className="fal fa-check"></i> Business managers, leaders</li>
@@ -55,7 +57,7 @@ const DetailsEvent = () => {
                            <a href="#">Big data,  </a>
                            <a href="#">Data analysis,</a>
                            <a href="#">Data modeling</a>
-                        </div>
+                        </div> */}
                      </div>
                   </div>
                   {/* Dynamic Page Event Right Side */}

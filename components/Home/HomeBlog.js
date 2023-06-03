@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useGetBlogsQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 const HomeBlog = () => {
    const {data:blogs,isError,isLoading} = useGetBlogsQuery()
@@ -44,12 +45,12 @@ const HomeBlog = () => {
                               <path d="M11.7822 11.3848L9.45723 9.99732C9.05223 9.75732 8.72223 9.17982 8.72223 8.70732V5.63232" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                            </svg><a href="#">{date}</a></span>
                         </li>
-                        <li>
+                        {/* <li>
                            <span><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M10.6848 6.99994C10.6848 8.48494 9.48476 9.68494 7.99976 9.68494C6.51476 9.68494 5.31476 8.48494 5.31476 6.99994C5.31476 5.51494 6.51476 4.31494 7.99976 4.31494C9.48476 4.31494 10.6848 5.51494 10.6848 6.99994Z" stroke="white" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
                               <path d="M7.99976 13.2025C10.6473 13.2025 13.1148 11.6425 14.8323 8.94254C15.5073 7.88504 15.5073 6.10754 14.8323 5.05004C13.1148 2.35004 10.6473 0.790039 7.99976 0.790039C5.35226 0.790039 2.88476 2.35004 1.16726 5.05004C0.492261 6.10754 0.492261 7.88504 1.16726 8.94254C2.88476 11.6425 5.35226 13.2025 7.99976 13.2025Z" stroke="white" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
                            </svg><a href="#">{views}</a></span>
-                        </li>
+                        </li> */}
                      </ul>
                   </div>
                </div>

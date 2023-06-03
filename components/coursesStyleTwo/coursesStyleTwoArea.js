@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Pagination from '../common/Pagination';
 import { useGetCategoryQuery, useGetCoursesQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 
 const CoursesStyleTwo = () => {

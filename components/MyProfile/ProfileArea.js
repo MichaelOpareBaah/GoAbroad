@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useEffect, useState } from "react";
 import { getTotal } from "../../redux/features/cartSlice";
 import { useGetMyCoursesQuery } from "../../redux/api/apiSlice";
+import Image from "next/image";
 
 
 const ProfileArea = () => {

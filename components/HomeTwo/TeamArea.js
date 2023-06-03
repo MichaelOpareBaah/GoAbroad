@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useGetTeamsQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 const TeamArea = () => {
    const {data:teams,isLoading,error,isError} = useGetTeamsQuery();

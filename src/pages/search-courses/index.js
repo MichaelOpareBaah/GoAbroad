@@ -5,6 +5,7 @@ import Footer from "../../../components/common/Footer";
 import Header from "../../../components/Home/Header";
 import Link from "next/link";
 import SEO from "../../../components/seo";
+import Image from "next/image";
 
 const SearchCourses = () => {
   // searchItems

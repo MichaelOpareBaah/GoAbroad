@@ -3,17 +3,20 @@ import { useDispatch, useSelector } from 'react-redux';
 import { singleBlog } from '../../redux/features/blogSlice';
 import BlogRightSide from '../Blog/BlogRightSide';
 import FormArea from './FormArea';
+import Image from 'next/image';
 
 const BlogDetailsArea = () => {
    // all blogs
    const blogs = useSelector(state => state.blogs.allBlogs);
    // blog
    const blog = useSelector(state => state.blogs.blog);
+
+   
    // dispatch
    const dispatch = useDispatch();
    // dispatch single blog
    useEffect(() => {
-      dispatch(singleBlog('62208badea7975d304d76830'))
+      dispatch(singleBlog('1'))
    }, [dispatch])
    return (
       <>

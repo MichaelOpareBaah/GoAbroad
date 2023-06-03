@@ -17,6 +17,7 @@ import { Modal } from 'react-responsive-modal';
 import ReactPlayer from "react-player";
 import SEO from '../../../components/seo';
 import { useGetCourseQuery } from '../../../redux/api/apiSlice';
+import Image from 'next/image';
 
 
 const CourseDetails = () => {

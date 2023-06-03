@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Modal } from 'react-responsive-modal';
 import ReactPlayer from "react-player";
+import Image from 'next/image';
 
 const Campus = () => {
    const [open, setOpen] = useState(false);

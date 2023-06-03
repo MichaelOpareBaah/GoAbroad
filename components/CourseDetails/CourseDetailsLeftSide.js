@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import DetailsTabItems from './DetailsTabItems';
 SwiperCore.use([Pagination]);
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const CourseDetailsLeftSide = ({ courseData }) => {

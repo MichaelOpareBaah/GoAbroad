@@ -8,6 +8,7 @@ import { searchText } from '../../redux/features/coursesSlice';
 import LoginData from '../../data/LoginMenuData';
 import useAuth from '../../hooks/useAuth';
 import Sidebar from '../common/SideBar';
+import Image from 'next/image';
 
 const HomeTwoHeader = () => {
    // handle sidebar show

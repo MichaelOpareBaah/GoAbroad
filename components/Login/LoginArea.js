@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import useAuth from '../../hooks/useAuth';
 import { useForm } from "react-hook-form";
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const LoginArea = () => {
    // useAuth

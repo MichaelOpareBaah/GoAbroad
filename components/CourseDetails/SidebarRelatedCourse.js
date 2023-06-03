@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useGetCoursesQuery } from '../../redux/api/apiSlice';
+import Image from 'next/image';
 
 const SidebarRelatedCourse = () => {
    const { data: courses, isLoading, error, isError } = useGetCoursesQuery();

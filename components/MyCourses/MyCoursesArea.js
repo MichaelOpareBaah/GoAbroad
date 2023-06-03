@@ -4,6 +4,7 @@ import { useGetMyCoursesQuery } from "../../redux/api/apiSlice";
 import { useEffect } from "react";
 import useAuth from "../../hooks/useAuth";
 import { useState } from "react";
+import Image from "next/image";
 
 const MyCoursesArea = () => {
    const [request,setRequest] = useState(false);

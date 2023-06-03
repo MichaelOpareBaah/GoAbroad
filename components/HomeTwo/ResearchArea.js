@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const ResearchArea = () => {
@@ -64,10 +65,10 @@ const ResearchArea = () => {
                               <div className="research__store">
                                  <ul>
                                     <li>
-                                       <a href="#"><img src="assets/img/icon/google-play-store.png" alt="google-play-store" /> Google play</a>
+                                       <a href="#"><Image src="assets/img/icon/google-play-store.png" alt="google-play-store" /> Google play</a>
                                     </li>
                                     <li>
-                                       <a href="#"><img src="assets/img/icon/apple-store.png" alt="apple-store" />Apple store</a>
+                                       <a href="#"><Image src="assets/img/icon/apple-store.png" alt="apple-store" />Apple store</a>
                                     </li>
                                  </ul>
                               </div>

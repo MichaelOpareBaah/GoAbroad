@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useGetCoursesQuery } from "../../redux/api/apiSlice";
+import Image from 'next/image';
 
 const TeamDetailsArea = ({ singleTeam }) => {
   const { data: courses, isLoading, error, isError } = useGetCoursesQuery();

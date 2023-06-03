@@ -5,6 +5,7 @@ import useSticky from "../../hooks/useSticky";
 import Link from 'next/link';
 import Sidebar from "../common/SideBar";
 import useAuth from "../../hooks/useAuth";
+import Image from "next/image";
 
 
 const StickyHeader = () => {

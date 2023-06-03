@@ -7,6 +7,7 @@ import SidebarRelatedCourse from './SidebarRelatedCourse';
 import { Modal } from 'react-responsive-modal';
 import ReactPlayer from "react-player";
 import { addToCart } from '../../redux/features/cartSlice';
+import Image from 'next/image';
 
 const CourseDetailsRightSide = ({ courseData }) => {
    // paymentInformation
